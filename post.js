@@ -18,3 +18,15 @@ const displayPost = (posts) => {
     }
 }
 loadPost();
+const addAPost = () => {
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+            title: 'My New Post',
+            body: 'This is my post',
+        })
+    }
+    )
+        .then()
+        .then()
+}
